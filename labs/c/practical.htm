@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>C Programming - VLab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<div class="header">
+e-Lab(C Programming)
+<span style="float:right">
+	<input type="button" value="Home" onclick='location.replace("index.htm")' class="btn" style="background-color:#007E33">
+	<input type="button" value="Previous Sessions" onclick='location.replace("presvious_sessions.htm")' class="btn" style="background-color:#007E33">
+	<input type="button" value="My Account" onclick='location.replace("../../accounts/myaccount.htm")' class="btn" style="background-color:#007E33">
+	<input type="button" value="Logout" onclick='location.replace("../../accounts/logout.htm")' class="btn" style="background-color:#007E33">
+</span>
+</div>
+<script language="javascript">
+	function coderun()
+	{
+		a=document.getElementById("codedesk").innerHTML;
+		document.getElementById("codedesk").innerHTML=a+"<br>pankaj@vlab >gcc task1.c<br>pankaj@vlab >./a.out<br>Hello World";
+	}
+</script>
+<div class="content" style="margin-left:2%;overflow:none;max-width:95%;">
+	<h3>Q: Write a Hello World Program</h3>
+	<textarea name="program" id="program" rows=20 cols=200>
+	#include<iostream.h>
+	main()
+	{
+		//Type Your Program Here.
+	}
+	</textarea><br><br>
+	<input type="button" value="Run Code" class="btn" onclick="coderun()"><br><br>
+	<div style="width:90%;height:30%;font-size:70%;padding:2px;color:white;background-color:black">
+	<code id="codedesk" name="codedesk">pankaj@vlab ></code>
+
+	</div>
+</div>
